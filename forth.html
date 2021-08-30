@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="forth.js"> </script> 
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="text-center mx-auto pt-5 height-50px ">
+        <div class="bg-light pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">QUADRATIC EQUATION</h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id1">
+            <label><h3>b:</h3></label>
+            <input type="text" class ="p-2" id="id2">
+            <label><h3>c:</h3></label>
+            <input type="text" class ="p-2" id="id3">
+
+            <label id="result">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="quadratic()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section1"> next</a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section1">
+        <div class="bg-info pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">Positive Negative Zero!!!</h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id4">
+
+            <label id="result1">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="positive()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section2"> next</a>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section2">
+        <div class="bg-light pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">Odd or even!! </h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id5">
+            <label id="result2">......</label>
+            <button class="p-3 btn btn-primary" type="submit3" onclick="oddoreven()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section3"> next</a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section3">
+        <div class="bg-info pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">Largest !!!</h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id6">
+            <label><h3>b:</h3></label>
+            <input type="text" class ="p-2" id="id7">
+            <label><h3>b:</h3></label>
+            <input type="text" class ="p-2" id="id8">
+
+
+            <label id="result3">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="largest()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section4"> next</a>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section4">
+        <div class="bg-light pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">Check prime!! </h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id9">
+            <label id="result4">......</label>
+            <button class="p-3 btn btn-primary" type="submit3" onclick="prime()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section5"> next</a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section5">
+        <div class="bg-info pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">print prime !!!</h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id10">
+            <label><h3>b:</h3></label>
+            <input type="text" class ="p-2" id="id11">
+            <label id="result5">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="printprime()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section6"> next</a>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section6">
+        <div class="bg-light pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">Factorial!! </h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id12">
+            <label id="result6">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="factorial()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section7"> next</a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section7">
+        <div class="bg-info pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">Multiplication table!!!</h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id13">
+            <label id="result7">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="multiplication()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section8"> next</a>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section8">
+        <div class="bg-light pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">Fibonacci!! </h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id14">
+            <label id="result8">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="fibonacci()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section9"> next</a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section9">
+        <div class="bg-info pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">amstrong number!!!</h1>
+            <br>
+            <label><h3>number:</h3></label>
+            <input type="text" class ="p-2" id="id15">
+            <label id="result9">......</label>
+<button class="p-3 btn btn-primary" type="submit" onclick="amstrongnumber()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section10"> next</a>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section10">
+        <div class="bg-light pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">amstrong number in an intervel!! </h1>
+            <br>
+            <label><h3>a:</h3></label>
+            <input type="text" class ="p-2" id="id16">
+            <label><h3>b:</h3></label>
+            <input type="text" class ="p-2" id="id17">
+
+            <label id="result10">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="amstrong()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section11"> next</a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section11">
+        <div class="bg-info pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">simple calculator!!!</h1>
+            <br>
+            <label><h3>operator:</h3></label>
+            <input type="text" class ="p-2" id="id18">
+            <label><h3>number1:</h3></label>
+            <input type="text" class ="p-2" id="id19">
+            <label><h3>number2:</h3></label>
+            <input type="text" class ="p-2" id="id20">
+
+            <label id="result11">......</label>
+<button class="p-3 btn btn-primary" type="submit" onclick="calculator()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section12"> next</a>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section12">
+        <div class="bg-light pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">sum of numbers!! </h1>
+            <br>
+            <label><h3>number:</h3></label>
+            <input type="text" class ="p-2" id="id21">
+
+            <label id="result12">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="sum()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section13"> next</a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section13">
+        <div class="bg-info pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">same!!!</h1>
+            <br>
+            <label><h3>number1:</h3></label>
+            <input type="text" class ="p-2" id="id22">
+            <label><h3>number2:</h3></label>
+            <input type="text" class ="p-2" id="id23">
+            <label><h3>number3:</h3></label>
+            <input type="text" class ="p-2" id="id24">
+
+            <label id="result13">......</label>
+<button class="p-3 btn btn-primary" type="submit" onclick="same()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section14"> next</a>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+    <section class="text-center mx-auto pt-5 height-50px " id="section14">
+        <div class="bg-light pt-5 "><br><br><br>
+            <h1 class="text-center pt-5">factors!! </h1>
+            <br>
+            <label><h3>number:</h3></label>
+            <input type="text" class ="p-2" id="id25">
+
+            <label id="result14">......</label>
+            <button class="p-3 btn btn-primary" type="submit" onclick="factors()">check</button>
+            <a class="p-3 bg-dark text-light" href ="#section15"> next</a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+</body>
+</html>
